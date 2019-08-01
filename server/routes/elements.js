@@ -9,7 +9,12 @@ router.get('/getgames', (req, res, next) => {
   Game
     .find({})
     
-    .then(allGames => res.json(allGames))
+    .then(allGames => {
+
+      let random = Math.floor(Math.random()*allGames.length)
+
+      res.json(allGames[random])
+    })
     .catch(e => console.log(e))
 });
 

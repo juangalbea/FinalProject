@@ -13,31 +13,31 @@ const games = [
     imageID: "https://pixabay.com/get/55e6d5424b5ba814f6da8c7dda79367f1c36d9e351526c4870297fd19e4dc25db8_1280.jpg",
     platforms: [
       {
-        x: 67,
-        y: 57,
-        w: 34,
-        h: 45,
+        x: 367,
+        y: 157,
+        w: 334,
+        h: 25,
+        color: "#fabada"
+      },
+      {
+        x: 167,
+        y: 157,
+        w: 134,
+        h: 15,
         color: "#fabada"
       },
       {
         x: 67,
         y: 57,
         w: 34,
-        h: 45,
+        h: 15,
         color: "#fabada"
       },
       {
-        x: 67,
-        y: 57,
-        w: 34,
-        h: 45,
-        color: "#fabada"
-      },
-      {
-        x: 67,
-        y: 57,
-        w: 34,
-        h: 45,
+        x: 267,
+        y: 257,
+        w: 234,
+        h: 15,
         color: "#fabada"
       }
     ],
@@ -53,29 +53,29 @@ const games = [
         x: 67,
         y: 57,
         w: 34,
-        h: 45,
-        color: "#fabada"
+        h: 15,
+        color: "green"
       },
       {
         x: 67,
         y: 57,
         w: 34,
-        h: 45,
-        color: "#fabada"
+        h: 15,
+        color: "green"
       },
       {
-        x: 67,
-        y: 57,
-        w: 34,
-        h: 45,
-        color: "#fabada"
+        x: 567,
+        y: 557,
+        w: 534,
+        h: 15,
+        color: "green"
       },
       {
-        x: 67,
-        y: 57,
-        w: 34,
-        h: 45,
-        color: "#fabada"
+        x: 167,
+        y: 157,
+        w: 134,
+        h: 15,
+        color: "green"
       }
     ],
     timestamp: Date()

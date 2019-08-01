@@ -50,8 +50,8 @@ app.use(
 
 app.use(
   cors({
-    credentials: true,
-    origin: ["http://localhost:3000"]
+    credentials: false,
+    origin: ["http://localhost:3000",'http://localhost','https://dreams-game.herokuapp.com',"null"]
   })
 );
 

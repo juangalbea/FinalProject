@@ -1,7 +1,7 @@
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   
 }
 
@@ -11,9 +11,10 @@ li {
 }
 
 li img {
-  height: 120px;
+  height: 100px;
   margin: 4px;
 }
+
 
 
 

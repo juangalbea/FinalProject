@@ -125,7 +125,7 @@ class ImageAPI extends Component {
                     <li key={i}>
                       {/* {item.user} {item.likes} */}
                       <img
-                        src={item.webformatURL}
+                        src={item.previewURL}
                         onClick={() => this.props.findUrl(item.largeImageURL)}
                       />
                     </li>
@@ -133,8 +133,7 @@ class ImageAPI extends Component {
                 </ul>
               </section>
               <footer className="modal-card-foot">
-                <button className="button is-success">Save changes</button>
-                <button className="button" onClick={this.handleModalBack}>Cancel</button>
+              <button className="button is-success" onClick={this.handleModalBack}>Done</button>
               </footer>
             </div>
           </div>:<div className="modal is-active"><div className="modal-background" />
@@ -157,7 +156,7 @@ class ImageAPI extends Component {
                     <li key={i}>
                       {/* {item.user} {item.likes} */}
                       <img
-                        src={item.webformatURL}
+                        src={item.previewURL}
                         onClick={() => this.props.findUrl(item.largeImageURL)}
                       />
                     </li>
@@ -165,8 +164,8 @@ class ImageAPI extends Component {
                 </ul>
               </section>
               <footer className="modal-card-foot">
-                <button className="button is-success">Save changes</button>
-                <button className="button" onClick={this.handleModalBack}>Cancel</button>
+                <button className="button is-success" onClick={this.handleModalBack}>Done</button>
+                
               </footer>
             </div>
           </div>}
