@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './Game.css';
+
 import ImageAPI from '../ImageAPI/ImageAPI'
 import ElementServices from "../../Services/Elements"
 import { platform } from 'os';
+import './Game.css';
 
 class Game extends Component {
 constructor(props) {
@@ -102,11 +103,11 @@ findUrl = (url) => {
 render() {
     return (
         <React.Fragment>
-            <form onSubmit={this.handleFormSubmit}>
+            <form className="platforms">
             <input type="range" min="4" max="10" defaultValue="4" onChange={this.rangeValue} />
             {
                 this.state.arr.map((e, i) => {
-                    return <div key={i} className="platforms"> 
+                    return <div key={i} > 
                       <h4 >Platform: {i + 1}</h4>
                       <input type="text" id={i} placeholder="X" onChange={this.handleChange} name="x"></input>
                       <input type="text" id={i} placeholder="Y" onChange={this.handleChange} name="y"></input>
@@ -123,8 +124,8 @@ render() {
                     <input type="text" placeholder="imageID" onChange={this.handleChangeImageID} name="imageID" value={this.state.imageID}></input>
                     <ImageAPI  findUrl={this.findUrl} />
                     
-                    
-                    <input type="submit" value="Submit"/>
+                    <button onClick={this.handleFormSubmit}>Submit</button>
+                    {/* <input type="submit" value="Submit"/> */}
             </form>
         </React.Fragment>
     )

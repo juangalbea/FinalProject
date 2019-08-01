@@ -77,6 +77,7 @@ class ImageAPI extends Component {
   }
 
   handleModal = e => {
+    e.preventDefault()
     console.log("hola")
     this.setState({
       ...this.state,
@@ -85,6 +86,7 @@ class ImageAPI extends Component {
   };
 
   handleModalBack = e => {
+    e.preventDefault()
     console.log("holas")
     this.setState({
       ...this.state,
@@ -125,7 +127,7 @@ class ImageAPI extends Component {
                     <li key={i}>
                       {/* {item.user} {item.likes} */}
                       <img
-                        src={item.previewURL}
+                        src={item.webformatURL}
                         onClick={() => this.props.findUrl(item.largeImageURL)}
                       />
                     </li>
@@ -133,7 +135,8 @@ class ImageAPI extends Component {
                 </ul>
               </section>
               <footer className="modal-card-foot">
-              <button className="button is-success" onClick={this.handleModalBack}>Done</button>
+                <button className="button is-success">Save changes</button>
+                <button className="button" onClick={this.handleModalBack}>Cancel</button>
               </footer>
             </div>
           </div>:<div className="modal is-active"><div className="modal-background" />
@@ -156,7 +159,7 @@ class ImageAPI extends Component {
                     <li key={i}>
                       {/* {item.user} {item.likes} */}
                       <img
-                        src={item.previewURL}
+                        src={item.webformatURL}
                         onClick={() => this.props.findUrl(item.largeImageURL)}
                       />
                     </li>
@@ -164,8 +167,8 @@ class ImageAPI extends Component {
                 </ul>
               </section>
               <footer className="modal-card-foot">
-                <button className="button is-success" onClick={this.handleModalBack}>Done</button>
-                
+                <button className="button is-success">Save changes</button>
+                <button className="button" onClick={this.handleModalBack}>Cancel</button>
               </footer>
             </div>
           </div>}

@@ -66,7 +66,7 @@ class App extends Component {
       return (
         <React.Fragment>
           <Switch>
-            <Route exact path='/home' render={()=><Home  />}/>
+            <Route exact path='/' render={()=><Home  />}/>
             <Route exact path='/game' render={()=><Game   />}/>
             <Route exact path='/videogame' render={()=><VideoGame   />}/>
             <Route exact path='/images' render={()=><ImageAPI   />}/>
@@ -80,6 +80,7 @@ class App extends Component {
       return (
         <React.Fragment>
           <Switch>
+          <Route exact path='/' render={()=><Home  />}/>
             <Route exact path='/login' render={()=><Login {...this.state.loggedInUser} getUser={this.getTheUser}/>}/>
             <Route exact path='/signup' render={()=><Signup {...this.state.loggedInUser}/>}/>
             

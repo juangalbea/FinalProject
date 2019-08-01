@@ -1,6 +1,8 @@
-.platforms h4 {
-  margin: 8px;
+.platforms {
+  width: 120px;
+
 }
+
 
 .platforms input {
   width: 70px;
